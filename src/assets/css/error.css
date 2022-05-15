@@ -1,0 +1,24 @@
+.error {
+  text-align: center;
+  justify-content: center;
+  height: auto;
+  transition: 0.3s ease-in-out;
+}
+
+.error-content {
+  margin: 0 auto;
+  align-items: center;
+  display: grid;
+  grid-template: 1fr / 1fr 1fr;
+  width: 60vw;
+}
+
+@media screen and (max-width: 992px) {
+  .error {
+    height: auto;
+  }
+
+  .error-content {
+    grid-template-columns: 1fr;
+  }
+}
