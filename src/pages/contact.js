@@ -16,9 +16,7 @@ function Contact() {
             return (
               <div key={social.id} className="contact-social">
                 <a href={social.link}>{social.icon}</a>
-                {social.link.includes("mailto:")
-                  ? social.link.substring(social.link.indexOf(":") + 1)
-                  : social.link}
+                {displaySocial(social.link)}
               </div>
             )
           })}
@@ -56,6 +54,14 @@ function Contact() {
       </main>
     </Layout>
   )
+}
+
+function displaySocial(link) {
+  if (link.includes("mailto:")) {
+    return link.substring(link.indexOf(":") + 1)
+  } else {
+    return link.substring(link.lastIndexOf("/") + 1)
+  }
 }
 
 export default Contact

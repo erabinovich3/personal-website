@@ -99,6 +99,14 @@
     grid-template-columns: 1fr;
   }
 
+  .form {
+    padding: 2rem 1rem;
+  }
+
+  .contact-form {
+    padding: 0;
+  }
+
   .contact-spacer {
     height: 0;
   }
