@@ -107,6 +107,7 @@ a {
   display: none;
   float: right;
   font-size: 2rem;
+  color: black;
 }
 
 @media screen and (max-width: 992px) {
