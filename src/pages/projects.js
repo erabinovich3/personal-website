@@ -23,7 +23,7 @@ function Projects({ data }) {
 
 export const query = graphql`
   {
-    allContentfulProject {
+    allContentfulProject(sort: { updatedAt: DESC }) {
       nodes {
         id
         name

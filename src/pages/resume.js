@@ -22,7 +22,7 @@ function Resume({ data }) {
           </a>
         </div>
         <p className="resume-intro">
-          Diligent software engineer with about 3 years of experience in full
+          Diligent software engineer with about 5 years of experience in full
           stack development. Proficient in cloud development and eager to learn
           new things. Experience collaborating in a fast moving Agile cross-team
           environment. I am interested in developing software that helps people,
@@ -52,7 +52,7 @@ function Resume({ data }) {
           <div className="resume-block">
             <h2 className="resume-block-title">Work Experience</h2>
             <h3>Software Engineer</h3>
-            <h4>NCR Corporation July 2019 - Present</h4>
+            <h4>NCR Corporation July 2019 - February 2024</h4>
             <ul>
               <li>
                 Worked on various components of a Microservices architecture
@@ -74,20 +74,23 @@ function Resume({ data }) {
               Python
             </p>
             <h4 className="resume-block-subtitle">Cloud</h4>
-            <p>Google Cloud Platform (GCP), Kubernetes, Minikube, Helm</p>
+            <p>
+              Google Cloud Platform (GCP), Kubernetes, Minikube, Helm, Google
+              Cloud Dataflow
+            </p>
             <h4 className="resume-block-subtitle">Frameworks</h4>
             <p>
               Apache Kafka, Jest Testing Framework, Cucumber Testing Framework,
               JMeter, Spring Boot, Spring Webflux
             </p>
             <h4 className="resume-block-subtitle">Build Tools</h4>
-            <p>Maven, Docker, Jenkins, Harness.io</p>
+            <p>Maven, Docker, Jenkins</p>
             <h4 className="resume-block-subtitle">Version Control</h4>
             <p>Git, GitHub, Artifactory</p>
             <h4 className="resume-block-subtitle">Operating System</h4>
             <p>Windows</p>
             <h4 className="resume-block-subtitle">Security</h4>
-            <p>Sonar, AquaSec, WhiteSource, Coverity</p>
+            <p>Sonar, AquaSec, WhiteSource (Mend), Coverity</p>
           </div>
 
           <div className="grid-group">
