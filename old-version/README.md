@@ -1,1 +1,0 @@
-This is my personal website. Built with [Gatsby's](https://www.gatsbyjs.com/) [hello-world starter](https://www.gatsbyjs.com/starters/gatsbyjs/gatsby-starter-hello-world/) and [Contentful](https://www.contentful.com/).
