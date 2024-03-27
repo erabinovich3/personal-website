@@ -1,3 +1,4 @@
+import { navLinks } from "@/utils/navLinks";
 import Link from "next/link";
 import React from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
@@ -10,21 +11,17 @@ const Footer = () => {
     return (
         <footer className="footer footer-center p-10 bg-neutral text-base-200 rounded">
             <nav className="flex flex-row flex-wrap gap-4">
-                <Link href="/" className="link link-hover">
-                    Home
-                </Link>
-                <Link href="/about" className="link link-hover">
-                    About
-                </Link>
-                <Link href="/resume" className="link link-hover">
-                    Resume
-                </Link>
-                <Link href="projects" className="link link-hover">
-                    Projects
-                </Link>
-                <Link href="contact" className="link link-hover">
-                    Contact
-                </Link>
+                {navLinks.map((link, i) => {
+                    return (
+                        <Link
+                            href={link.path}
+                            className="link link-hover"
+                            key={i}
+                        >
+                            {link.title}
+                        </Link>
+                    );
+                })}
             </nav>
             <nav>
                 <div className="grid grid-flow-col gap-4">
@@ -33,17 +30,17 @@ const Footer = () => {
                         target="_blank"
                         rel="noreferrer"
                     >
-                        <FaLinkedin className={socialLinkStyles}></FaLinkedin>
+                        <FaLinkedin className={socialLinkStyles} />
                     </a>
                     <Link href="mailto:ericar13@live.com">
-                        <HiMail className={socialLinkStyles}></HiMail>
+                        <HiMail className={socialLinkStyles} />
                     </Link>
                     <a
-                        href="mailto:ericar13@live.com"
+                        href="https://github.com/erabinovich3"
                         target="_blank"
                         rel="noreferrer"
                     >
-                        <FaGithub className={socialLinkStyles}></FaGithub>
+                        <FaGithub className={socialLinkStyles} />
                     </a>
                 </div>
             </nav>

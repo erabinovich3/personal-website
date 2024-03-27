@@ -6,62 +6,11 @@ import logo from "@/assets/name-logo-small.svg";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { HiMenu, HiX } from "react-icons/hi";
+import NavLink from "./NavLink";
+import { navLinks } from "@/utils/navLinks";
 
 const activeStyles = "border-b-2 border-b-accent text-primary";
 const styles = "transition ease-in-out hover:text-secondary duration-200";
-
-function useNavLinks() {
-    return (
-        <>
-            <Link
-                href="/"
-                className={
-                    usePathname() === "/" ? `${activeStyles}` : `${styles}`
-                }
-            >
-                Home
-            </Link>
-            <Link
-                href="/about"
-                className={
-                    usePathname() === "/about" ? `${activeStyles}` : `${styles}`
-                }
-            >
-                About
-            </Link>
-            <Link
-                href="/resume"
-                className={
-                    usePathname() === "/resume"
-                        ? `${activeStyles}`
-                        : `${styles}`
-                }
-            >
-                Resume
-            </Link>
-            <Link
-                href="/projects"
-                className={
-                    usePathname() === "/projects"
-                        ? `${activeStyles}`
-                        : `${styles}`
-                }
-            >
-                Projects
-            </Link>
-            <Link
-                href="/contact"
-                className={
-                    usePathname() === "/contact"
-                        ? `${activeStyles}`
-                        : `${styles}`
-                }
-            >
-                Contact
-            </Link>
-        </>
-    );
-}
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -96,7 +45,9 @@ const Navbar = () => {
                 <div
                     className={`transition-all hidden sm:flex sm:flex-row sm:gap-3`}
                 >
-                    {useNavLinks()}
+                    {navLinks.map((link, i) => (
+                        <NavLink title={link.title} path={link.path} key={i} />
+                    ))}
                 </div>
             </div>
             {/* mobile menu */}
@@ -106,7 +57,9 @@ const Navbar = () => {
             <div
                 className={`bg-base-100 ${isOpen ? "flex flex-col justify-center items-center gap-3 pb-2" : "hidden"} sm:hidden`}
             >
-                {useNavLinks()}
+                {navLinks.map((link, i) => (
+                    <NavLink title={link.title} path={link.path} key={i} />
+                ))}
             </div>
         </>
     );
