@@ -40,7 +40,7 @@ function parseImageToProjectImage(
     }
 
     return {
-        src: `https:${image.fields.file?.url}` || "",
+        src: `https:${image.fields.file?.url}` || null,
         alt: image.fields.description || image.fields.title || "",
         width: image.fields.file?.details.image?.width || 0,
         height: image.fields.file?.details.image?.height || 0,

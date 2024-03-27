@@ -1,5 +1,5 @@
 export interface Project {
-    id: string,
+    id: string;
     name: string;
     description: string;
     image: ProjectImage;
@@ -7,7 +7,7 @@ export interface Project {
 }
 
 export interface ProjectImage {
-    src: string;
+    src: string | null;
     alt: string;
     width: number;
     height: number;

@@ -3,6 +3,7 @@ import Image from "next/image";
 import React from "react";
 import { FaLaptopCode } from "react-icons/fa";
 import { HiOutlineExternalLink } from "react-icons/hi";
+import placeholder from "@/assets/project-placeholder.png";
 
 interface ProjectProps {
     project: Project;
@@ -16,7 +17,8 @@ const Project = ({ project }: ProjectProps) => {
         >
             <figure className="p-3 sm:p-5">
                 <Image
-                    src={project.image.src}
+                    priority
+                    src={project.image.src ?? placeholder}
                     alt={project.image.alt}
                     width={700}
                     height={400}
