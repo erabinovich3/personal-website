@@ -19,7 +19,7 @@ const Project = ({ project }: ProjectProps) => {
                 <Image
                     priority
                     src={project.image.src ?? placeholder}
-                    alt={project.image.alt}
+                    alt={project.image.alt ?? "Project Placeholder Image"}
                     width={700}
                     height={400}
                     className="rounded-lg"

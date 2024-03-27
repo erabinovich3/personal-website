@@ -8,7 +8,7 @@ export interface Project {
 
 export interface ProjectImage {
     src: string | null;
-    alt: string;
+    alt: string | null;
     width: number;
     height: number;
 }
