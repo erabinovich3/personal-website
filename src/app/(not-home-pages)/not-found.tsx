@@ -19,7 +19,7 @@ const NotFoundPage = () => {
                 src={notFoundImg}
                 alt="404: Page Not Found"
                 className="m-auto"
-                width={700}
+                height={600}
             />
         </div>
     );

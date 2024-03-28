@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "./globals.css";
+import "@/app/globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     description: "Erica Rabinovich's personal website",
 };
 
-export default function RootLayout({
+export default function NonHomePageLayout({
     children,
 }: Readonly<{
     children: React.ReactNode;
@@ -23,7 +23,9 @@ export default function RootLayout({
         <html lang="en">
             <body className={inter.className}>
                 <Navbar />
-                <main className="py-7 px-7 lg:py-12 lg:px-14">{children}</main>
+                <main className="flex items-center py-7 px-7 lg:py-12 lg:px-14 min-h-[70vh]">
+                    {children}
+                </main>
                 <Footer />
             </body>
         </html>

@@ -13,7 +13,7 @@ const socialLinkStyles =
 
 const ContactPage = () => {
     return (
-        <div className="flex flex-col gap-5 lg:gap-12 justify-center items-center">
+        <div className="flex flex-col gap-5 lg:gap-12 justify-center items-center w-full">
             <div className="flex flex-row flex-wrap gap-3 justify-center items-center w-full min-w-[210px]">
                 <a
                     href="https://www.linkedin.com/in/rabinovicherica"

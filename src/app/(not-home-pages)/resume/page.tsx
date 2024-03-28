@@ -67,9 +67,9 @@ const ResumePage = () => {
                             Helm, Google Cloud Dataflow
                         </ResumeBlock>
                         <ResumeBlock title="Frameworks">
-                            React, Express, Apache Kafka, Jest Testing
-                            Framework, Cucumber Testing Framework, JMeter,
-                            Spring Boot, Spring Webflux
+                            React, Spring Boot, Spring Webflux, Express, Apache
+                            Kafka, Jest Testing Framework, Cucumber Testing
+                            Framework, JMeter
                         </ResumeBlock>
                         <ResumeBlock title="Build Tools">
                             Maven, Docker, Jenkins
