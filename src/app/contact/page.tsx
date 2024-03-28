@@ -21,23 +21,23 @@ const ContactPage = () => {
                     rel="noreferrer"
                     className={socialLinkStyles}
                 >
-                    <FaLinkedin className="text-2xl"></FaLinkedin>
+                    <FaLinkedin className="text-2xl" />
                     rabinovicherica
                 </a>
                 <Link
                     href="mailto:ericar13@live.com"
                     className={socialLinkStyles}
                 >
-                    <HiMail className="text-2xl"></HiMail>
+                    <HiMail className="text-2xl" />
                     ericar13@live.com
                 </Link>
                 <a
-                    href="mailto:ericar13@live.com"
+                    href="https://github.com/erabinovich3"
                     target="_blank"
                     rel="noreferrer"
                     className={socialLinkStyles}
                 >
-                    <FaGithub className="text-2xl"></FaGithub>
+                    <FaGithub className="text-2xl" />
                     erabinovich3
                 </a>
             </div>
