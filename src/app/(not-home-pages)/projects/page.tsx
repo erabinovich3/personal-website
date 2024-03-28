@@ -1,4 +1,4 @@
-import Project from "@/components/Project";
+import ProjectCard from "@/components/ProjectCard";
 import { getAllProjects } from "@/lib/contentfulApi";
 import { Metadata } from "next";
 import React from "react";
@@ -12,7 +12,7 @@ const ProjectsPage = async () => {
     return (
         <div className="flex flex-col gap-10">
             {projects.map((project) => {
-                return <Project project={project} key={project.id} />;
+                return <ProjectCard project={project} key={project.id} />;
             })}
         </div>
     );

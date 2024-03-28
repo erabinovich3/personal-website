@@ -9,7 +9,7 @@ interface ProjectProps {
     project: Project;
 }
 
-const Project = ({ project }: ProjectProps) => {
+const ProjectCard = ({ project }: ProjectProps) => {
     return (
         <div
             key={project.id}
@@ -75,4 +75,4 @@ const Project = ({ project }: ProjectProps) => {
     );
 };
 
-export default Project;
+export default ProjectCard;
