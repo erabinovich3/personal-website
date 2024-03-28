@@ -11,11 +11,12 @@ const NavLink = ({ title, path }: NavLinkProps) => {
     return (
         <Link
             href={path}
-            className={
-                usePathname() === path
-                    ? "border-b-2 border-b-accent text-primary"
-                    : "transition ease-in-out hover:text-secondary duration-200"
-            }
+            className={`uppercase font-bold
+                ${
+                    usePathname() === path
+                        ? "border-b-2 border-b-accent text-primary"
+                        : "transition ease-in-out hover:text-secondary duration-200"
+                }`}
         >
             {title}
         </Link>

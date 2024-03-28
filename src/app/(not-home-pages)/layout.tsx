@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Open_Sans } from "next/font/google";
 import "@/app/globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
-const inter = Inter({ subsets: ["latin"] });
+const openSans = Open_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
     title: {
@@ -21,7 +21,7 @@ export default function NonHomePageLayout({
 }>) {
     return (
         <html lang="en">
-            <body className={inter.className}>
+            <body className={openSans.className}>
                 <Navbar />
                 <main className="flex items-center py-7 px-7 lg:py-12 lg:px-14 min-h-[70vh]">
                     {children}

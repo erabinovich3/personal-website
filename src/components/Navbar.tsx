@@ -17,7 +17,7 @@ const Navbar = () => {
 
     return (
         <>
-            <div className="navbar p-3 bg-base-100 gap-3 font-bold justify-between sm:justify-center">
+            <div className="navbar p-3 bg-base-100 gap-3 justify-between sm:justify-center">
                 <div>
                     <button
                         onClick={() => {
@@ -55,7 +55,7 @@ const Navbar = () => {
                 className={`${isOpen ? "flex" : "hidden"} divider my-0 sm:hidden bg-base-100`}
             />
             <div
-                className={`bg-base-100 ${isOpen ? "flex flex-col justify-center items-center gap-3 pb-2" : "hidden"} sm:hidden`}
+                className={`bg-base-100 ${isOpen ? "flex flex-col justify-center items-center gap-3 pt-1 pb-3" : "hidden"} sm:hidden`}
             >
                 {navLinks.map((link, i) => (
                     <NavLink title={link.title} path={link.path} key={i} />

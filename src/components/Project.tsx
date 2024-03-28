@@ -13,19 +13,19 @@ const Project = ({ project }: ProjectProps) => {
     return (
         <div
             key={project.id}
-            className="card grid grid-cols-1 md:grid-cols-2 bg-base-100 shadow min-w-[200px]"
+            className="card grid grid-cols-1 lg:grid-cols-2 bg-base-100 shadow min-w-[200px]"
         >
             <figure className="p-3 sm:p-5">
                 <Image
                     priority
-                    src={project.image.src ?? placeholder}
-                    alt={project.image.alt ?? "Project Placeholder Image"}
+                    src={project.image.src || placeholder}
+                    alt={project.image.alt || "Project Placeholder Image"}
                     width={700}
                     height={400}
                     className="rounded-lg"
                 />
             </figure>
-            <div className="card-body pt-2 md:p-8">
+            <div className="card-body pt-2 lg:p-8">
                 <div className="flex-1 items-center">
                     <h2 className="card-title">{project.name}</h2>
                     <p className="mb-5">{project.description}</p>

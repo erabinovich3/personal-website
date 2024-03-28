@@ -16,11 +16,11 @@ export default async function Home() {
                 }}
             >
                 <div className="hero-content grid grid-cols-1 sm:grid-cols-2 min-w-[235px]">
-                    <div className="font-extrabold text-center">
-                        <h1 className="text-2xl  after:block after:m-auto after:border-b-2 after:border-neutral after:w-[70%]">
+                    <div className="font-bold text-center tracking-wide">
+                        <h1 className="text-3xl  after:block after:m-auto after:border-b-2 after:border-neutral after:w-[70%]">
                             Hi, I&apos;m Erica.
                         </h1>
-                        <h2 className="text-xl">
+                        <h2 className="text-2xl">
                             Full Stack Software Engineer
                         </h2>
                     </div>
