@@ -16,10 +16,12 @@ const ResumePage = () => {
                 <h1 className="text-3xl font-bold text-center">
                     Erica Rabinovich
                 </h1>
-                <button className="btn btn-primary xs:h-10 xs:min-h-10 min-w-[150px]">
-                    Download as PDF
-                    <HiDownload className="text-xl hidden xs:block" />
-                </button>
+                <a href="/Resume-2024.pdf" download>
+                    <button className="btn btn-primary xs:h-10 xs:min-h-10 min-w-[150px]">
+                        Download as PDF
+                        <HiDownload className="text-xl hidden xs:block" />
+                    </button>
+                </a>
             </div>
             <p className="mb-7 font-medium">
                 Diligent software engineer with about 5 years of experience in
@@ -31,7 +33,10 @@ const ResumePage = () => {
             </p>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-7 lg:gap-14">
                 <div className="flex flex-col gap-7">
-                    <ResumeSection title="Technical Experience">
+                    <ResumeSection
+                        title="Technical Experience"
+                        className="prose prose-li:m-0 prose-li:-mx-1"
+                    >
                         <ul>
                             <li>
                                 Strong team player, driven, excellent written
@@ -45,10 +50,8 @@ const ResumePage = () => {
                                 Experience building 3rd-party API integrations
                             </li>
                             <li>Experience with Cassandra database</li>
-                            <li>
-                                Always ready to learn Familiar with CI/CD
-                                practices
-                            </li>
+                            <li>Always ready to learn</li>
+                            <li>Familiar with CI/CD practices</li>
                             <li>
                                 Familiar with Agile/Scrum Software Development
                             </li>
@@ -57,16 +60,16 @@ const ResumePage = () => {
                     <ResumeSection title="Skills & Proficiencies">
                         <ResumeBlock title="Programming Languages">
                             TypeScript, JavaScript, Java, Node.js, HTML, CSS,
-                            Shell scripting, Python
+                            Shell scripting, Python, SQL
                         </ResumeBlock>
                         <ResumeBlock title="Cloud">
                             Google Cloud Platform (GCP), Kubernetes, Minikube,
                             Helm, Google Cloud Dataflow
                         </ResumeBlock>
                         <ResumeBlock title="Frameworks">
-                            Apache Kafka, Jest Testing Framework, Cucumber
-                            Testing Framework, JMeter, Spring Boot, Spring
-                            Webflux
+                            React, Express, Apache Kafka, Jest Testing
+                            Framework, Cucumber Testing Framework, JMeter,
+                            Spring Boot, Spring Webflux
                         </ResumeBlock>
                         <ResumeBlock title="Build Tools">
                             Maven, Docker, Jenkins
@@ -75,10 +78,10 @@ const ResumePage = () => {
                             Git, GitHub, Artifactory
                         </ResumeBlock>
                         <ResumeBlock title="Operating System">
-                            Windows
+                            Windows, Linux
                         </ResumeBlock>
                         <ResumeBlock title="Security">
-                            Sonar, AquaSec, WhiteSource (Mend), Coverity
+                            Sonar, AquaSec, WhiteSource (MEND), Wireshark
                         </ResumeBlock>
                     </ResumeSection>
                 </div>
@@ -87,6 +90,7 @@ const ResumePage = () => {
                         <WorkExpBlock
                             title="Software Engineer"
                             subtitle="NCR Corporation July 2019 - February 2024"
+                            className="prose prose-li:m-0"
                         >
                             <ul>
                                 <li>
@@ -102,14 +106,17 @@ const ResumePage = () => {
                             </ul>
                         </WorkExpBlock>
                     </ResumeSection>
-                    <ResumeSection title="Education">
+                    <ResumeSection title="Education" className="gap-4">
+                        <ResumeBlock title="Google Cybersecurity Certificate">
+                            <h4 className="-mt-1">March 2024</h4>
+                        </ResumeBlock>
                         <ResumeBlock title="Bachelor of Computer Science">
-                            <p className="not-prose">
+                            <p className="-mt-1">
                                 Georgia Institute of Technology
                             </p>
-                            <p className="not-prose">Atlanta, Georgia</p>
-                            <p className="not-prose">2015 - 2019</p>
-                            <p className="not-prose">
+                            <p className="-mt-1">Atlanta, Georgia</p>
+                            <p className="-mt-1">2015 - 2019</p>
+                            <p className="-mt-1">
                                 Graduated with Highest Honors
                             </p>
                         </ResumeBlock>
