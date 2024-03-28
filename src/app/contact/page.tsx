@@ -42,22 +42,29 @@ const ContactPage = () => {
                 </a>
             </div>
             <div className="w-full">
-                <form className="flex flex-col gap-3 w-full min-w-[150px] max-w-5xl m-auto">
+                <form
+                    action="https://formspree.io/f/mvoldbkg"
+                    method="POST"
+                    className="flex flex-col gap-3 w-full min-w-[150px] max-w-5xl m-auto"
+                >
                     <input
                         required
                         type="text"
+                        name="name"
                         placeholder="Name"
                         className="input input-bordered w-full"
                     />
                     <input
                         required
                         type="email"
+                        name="email"
                         placeholder="Email"
                         className="input input-bordered w-full"
                     />
                     <textarea
                         required
                         placeholder="Message"
+                        name="message"
                         className="textarea textarea-bordered w-full"
                     />
                     <button type="submit" className="btn btn-primary">
