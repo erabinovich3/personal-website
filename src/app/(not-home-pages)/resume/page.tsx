@@ -25,11 +25,12 @@ const ResumePage = () => {
             </div>
             <p className="mb-7 font-medium">
                 Diligent software engineer with about 5 years of experience in
-                full stack development. Proficient in cloud development and
-                eager to learn new things. Experience collaborating in a fast
-                moving Agile cross-team environment. I am interested in
-                developing software that helps people, whether in a large or
-                small way. I want to make a difference.
+                full stack development and proficiency with cloud technologies.
+                Proven record of collaborating effectively in fast-paced Agile
+                cross-team environments. Passionate about leveraging technology
+                to make a positive impact on people&apos;s lives, whether on a
+                large or small scale. Eager to continue learning and develop
+                software solutions that drive meaningful change.
             </p>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-7 lg:gap-14">
                 <div className="flex flex-col gap-7">
@@ -39,37 +40,47 @@ const ResumePage = () => {
                     >
                         <ul>
                             <li>
-                                Strong team player, driven, excellent written
-                                and verbal communication skills
+                                Demonstrated exceptional teamwork skills while
+                                working seamlessly within 4 international and
+                                cross-functional teams, effectively navigating
+                                diverse cultural and professional backgrounds
                             </li>
                             <li>
-                                Experience both building and consuming REST
-                                APIs, and experience consuming SOAP APIs
+                                Excellent written and verbal communication
+                                skills
                             </li>
                             <li>
-                                Experience building 3rd-party API integrations
+                                Experience in both building and consuming REST
+                                APIs, as well as proficient in handling SOAP
+                                APIs
                             </li>
-                            <li>Experience with Cassandra database</li>
-                            <li>Always ready to learn</li>
+                            <li>
+                                Successfully implemented 3rd-party API
+                                integrations, ensuring seamless connectivity and
+                                functionality across systems
+                            </li>
+                            <li>
+                                Enthusiastic about ongoing learning and
+                                development, constantly seeking opportunities to
+                                expand knowledge
+                            </li>
                             <li>Familiar with CI/CD practices</li>
-                            <li>
-                                Familiar with Agile/Scrum Software Development
-                            </li>
+                            <li>Experienced in Agile/Scrum methodologies</li>
                         </ul>
                     </ResumeSection>
                     <ResumeSection title="Skills & Proficiencies">
                         <ResumeBlock title="Programming Languages">
-                            TypeScript, JavaScript, Java, Node.js, HTML, CSS,
+                            Java, JavaScript, TypeScript, Node.js, HTML, CSS,
                             Shell scripting, Python, SQL
                         </ResumeBlock>
                         <ResumeBlock title="Cloud">
-                            Google Cloud Platform (GCP), Kubernetes, Minikube,
-                            Helm, Google Cloud Dataflow
+                            Google Cloud Platform (GCP), Kubernetes, Helm,
+                            Minikube, Google Cloud Dataflow
                         </ResumeBlock>
                         <ResumeBlock title="Frameworks">
-                            NextJS, React, Spring Boot, Spring Webflux, Express,
-                            Apache Kafka, Jest Testing Framework, Cucumber
-                            Testing Framework, JMeter
+                            Java Spring Boot, Java Spring Webflux, React,
+                            Next.js, Express, Apache Kafka, Jest Testing
+                            Framework, Cucumber Testing Framework, JMeter
                         </ResumeBlock>
                         <ResumeBlock title="Build Tools">
                             Maven, Docker, Jenkins
@@ -77,11 +88,11 @@ const ResumePage = () => {
                         <ResumeBlock title="Version Control">
                             Git, GitHub, Artifactory
                         </ResumeBlock>
-                        <ResumeBlock title="Operating System">
+                        <ResumeBlock title="Operating Systems">
                             Windows, Linux
                         </ResumeBlock>
                         <ResumeBlock title="Security">
-                            Sonar, AquaSec, WhiteSource (MEND), Wireshark
+                            SonarQube, AquaSec, WhiteSource (MEND), Wireshark
                         </ResumeBlock>
                     </ResumeSection>
                 </div>
@@ -89,32 +100,49 @@ const ResumePage = () => {
                     <ResumeSection title="Work Experience">
                         <WorkExpBlock
                             title="Software Engineer"
-                            subtitle="NCR Corporation July 2019 - February 2024"
+                            subtitle="NCR Corporation"
+                            dates="July 2019 - February 2024"
                             className="prose prose-li:m-0"
                         >
                             <ul>
                                 <li>
-                                    Worked on various components of a
-                                    Microservices architecture
+                                    Contributed to the development of at least 5
+                                    diverse components within a Microservices
+                                    architecture
                                 </li>
                                 <li>
-                                    Designed and implemented teller-consumer
-                                    collaboration SDK components
+                                    Spearheaded the design and implementation of
+                                    3 teller-consumer collaboration SDK
+                                    components, enabling abstracted
+                                    communication between frontend applications
+                                    and backend systems
                                 </li>
-                                <li>Tracked and addressed AppSec issues</li>
-                                <li>Mentored Junior Software Engineers</li>
+                                <li>
+                                    Proactively tracked and addressed
+                                    application security (AppSec) issues,
+                                    resulting in a 75% decrease in security
+                                    vulnerabilities
+                                </li>
+                                <li>
+                                    Provided guidance and mentorship to 4 junior
+                                    software engineers, fostering their
+                                    professional growth and development
+                                </li>
                             </ul>
                         </WorkExpBlock>
                     </ResumeSection>
-                    <ResumeSection title="Education" className="gap-4">
+                    <ResumeSection title="Certifications">
                         <ResumeBlock title="Google Cybersecurity Certificate">
-                            <h4 className="-mt-1">March 2024</h4>
+                            <p className="-mt-1">Coursera</p>
+                            <p className="-mt-1">March 2024</p>
                         </ResumeBlock>
+                    </ResumeSection>
+                    <ResumeSection title="Education">
                         <ResumeBlock title="Bachelor of Computer Science">
                             <p className="-mt-1">
                                 Georgia Institute of Technology
                             </p>
-                            <p className="-mt-1">Atlanta, Georgia</p>
+                            <p className="-mt-1">Atlanta, Georgia, USA</p>
                             <p className="-mt-1">2015 - 2019</p>
                             <p className="-mt-1">
                                 Graduated with Highest Honors
