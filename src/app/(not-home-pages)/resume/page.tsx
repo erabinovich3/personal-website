@@ -16,7 +16,7 @@ const ResumePage = () => {
                 <h1 className="text-3xl font-bold text-center">
                     Erica Rabinovich
                 </h1>
-                <a href="/Resume-2024.pdf" download>
+                <a href="/Resume-2025.pdf" download>
                     <button className="btn btn-primary xs:h-10 xs:min-h-10 min-w-[150px]">
                         Download as PDF
                         <HiDownload className="text-xl hidden xs:block" />
@@ -24,7 +24,7 @@ const ResumePage = () => {
                 </a>
             </div>
             <p className="mb-7 font-medium">
-                Diligent software engineer with about 5 years of experience in
+                Diligent software engineer with about 6 years of experience in
                 full stack development and proficiency with cloud technologies.
                 Proven record of collaborating effectively in fast-paced Agile
                 cross-team environments. Passionate about leveraging technology
@@ -51,8 +51,8 @@ const ResumePage = () => {
                             </li>
                             <li>
                                 Experience in both building and consuming REST
-                                APIs, as well as proficient in handling SOAP
-                                APIs
+                                and GraphQL APIs, as well as proficient in handling 
+                                SOAP APIs
                             </li>
                             <li>
                                 Successfully implemented 3rd-party API
@@ -74,19 +74,19 @@ const ResumePage = () => {
                             Shell scripting, Python, SQL
                         </ResumeBlock>
                         <ResumeBlock title="Cloud">
-                            Google Cloud Platform (GCP), Kubernetes, Helm,
-                            Minikube, Google Cloud Dataflow
+                            Google Cloud Platform (GCP), Amazon Web Services (AWS), 
+                            Kubernetes, Helm, Minikube
                         </ResumeBlock>
                         <ResumeBlock title="Frameworks">
-                            Java Spring Boot, Java Spring Webflux, React,
-                            Next.js, Express, Apache Kafka, Jest Testing
+                            Java Spring Boot, Java Spring Batch, Java Spring Webflux, 
+                            React, Next.js, Express, Apache Kafka, Jest Testing
                             Framework, Cucumber Testing Framework, JMeter
                         </ResumeBlock>
                         <ResumeBlock title="Build Tools">
                             Maven, Docker, Jenkins
                         </ResumeBlock>
                         <ResumeBlock title="Version Control">
-                            Git, GitHub, Artifactory
+                            Git, GitHub, Artifactory, BitBucket
                         </ResumeBlock>
                         <ResumeBlock title="Operating Systems">
                             Windows, Linux
@@ -99,8 +99,8 @@ const ResumePage = () => {
                 <div className="flex flex-col gap-7">
                     <ResumeSection title="Work Experience">
                         <WorkExpBlock
-                            title="Software Engineer"
-                            subtitle="NCR Corporation"
+                            title="NCR Corporation"
+                            subtitle="Software Engineer II"
                             dates="July 2019 - February 2024"
                             className="prose prose-li:m-0"
                         >
@@ -127,6 +127,26 @@ const ResumePage = () => {
                                     Provided guidance and mentorship to 4 junior
                                     software engineers, fostering their
                                     professional growth and development
+                                </li>
+                            </ul>
+                        </WorkExpBlock>
+                        <WorkExpBlock
+                            title="JPMorgan Chase"
+                            subtitle="Associate Software Engineer"
+                            dates="May 2024 - Present"
+                            className="prose prose-li:m-0"
+                        >
+                            <ul>
+                                <li>
+                                    Effectively communicated with stakeholders to 
+                                    design and implement a GraphQL API to improve 
+                                    data-fetching efficiency by 50%
+                                </li>
+                                <li>
+                                    Contributed to development of microservice ecosystem 
+                                    for processing, transforming, and migrating nearly 1 
+                                    million documents in as little as 3.5 hours while 
+                                    maintaining data parity
                                 </li>
                             </ul>
                         </WorkExpBlock>
