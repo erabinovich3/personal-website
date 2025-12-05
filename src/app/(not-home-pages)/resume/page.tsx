@@ -16,7 +16,7 @@ const ResumePage = () => {
                 <h1 className="text-3xl font-bold text-center">
                     Erica Rabinovich
                 </h1>
-                <a href="/Resume-2025.pdf" download>
+                <a href="/Erica-Rabinovich-Resume.pdf" download>
                     <button className="btn btn-primary xs:h-10 xs:min-h-10 min-w-[150px]">
                         Download as PDF
                         <HiDownload className="text-xl hidden xs:block" />
@@ -74,7 +74,8 @@ const ResumePage = () => {
                             Shell scripting, Python, SQL
                         </ResumeBlock>
                         <ResumeBlock title="Cloud">
-                            Google Cloud Platform (GCP), Amazon Web Services (AWS), 
+                            Amazon Web Services (AWS), 
+                            Google Cloud Platform (GCP), 
                             Kubernetes, Helm, Minikube
                         </ResumeBlock>
                         <ResumeBlock title="Frameworks">
@@ -84,6 +85,9 @@ const ResumePage = () => {
                         </ResumeBlock>
                         <ResumeBlock title="Build Tools">
                             Maven, Docker, Jenkins
+                        </ResumeBlock>
+                        <ResumeBlock title="Databases">
+                            PostgreSQL, MongoDB
                         </ResumeBlock>
                         <ResumeBlock title="Version Control">
                             Git, GitHub, Artifactory, BitBucket
