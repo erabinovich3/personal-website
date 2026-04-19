@@ -103,6 +103,32 @@ const ResumePage = () => {
                 <div className="flex flex-col gap-7">
                     <ResumeSection title="Work Experience">
                         <WorkExpBlock
+                            title="JPMorgan Chase"
+                            subtitle="Associate Software Engineer"
+                            dates="May 2024 - Present"
+                            className="prose prose-li:m-0"
+                        >
+                            <ul>
+                                <li>
+                                    Built and launched a new workflow in Document Management UI, expanding functionality for thousands of users
+                                </li>
+                                <li>
+                                    Supported 10+ production releases, fixing critical issues to ensure stable deployments
+                                </li>
+                                <li>
+                                    Effectively communicated with stakeholders to 
+                                    design and implement a GraphQL API to improve 
+                                    data-fetching efficiency by 50%
+                                </li>
+                                <li>
+                                    Contributed to development of microservice ecosystem 
+                                    for processing, transforming, and migrating nearly 1 
+                                    million documents in as little as 3.5 hours while 
+                                    maintaining data parity
+                                </li>
+                            </ul>
+                        </WorkExpBlock>
+                        <WorkExpBlock
                             title="NCR Corporation"
                             subtitle="Software Engineer II"
                             dates="July 2019 - February 2024"
@@ -131,26 +157,6 @@ const ResumePage = () => {
                                     Provided guidance and mentorship to 4 junior
                                     software engineers, fostering their
                                     professional growth and development
-                                </li>
-                            </ul>
-                        </WorkExpBlock>
-                        <WorkExpBlock
-                            title="JPMorgan Chase"
-                            subtitle="Associate Software Engineer"
-                            dates="May 2024 - Present"
-                            className="prose prose-li:m-0"
-                        >
-                            <ul>
-                                <li>
-                                    Effectively communicated with stakeholders to 
-                                    design and implement a GraphQL API to improve 
-                                    data-fetching efficiency by 50%
-                                </li>
-                                <li>
-                                    Contributed to development of microservice ecosystem 
-                                    for processing, transforming, and migrating nearly 1 
-                                    million documents in as little as 3.5 hours while 
-                                    maintaining data parity
                                 </li>
                             </ul>
                         </WorkExpBlock>
