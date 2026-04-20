@@ -98,6 +98,9 @@ const ResumePage = () => {
                         <ResumeBlock title="Security">
                             SonarQube, AquaSec, WhiteSource (MEND), Wireshark
                         </ResumeBlock>
+                        <ResumeBlock title="Artificial Intelligence (AI)">
+                            GitHub Copilot, Claude, Chat GPT
+                        </ResumeBlock>
                     </ResumeSection>
                 </div>
                 <div className="flex flex-col gap-7">
