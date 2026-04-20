@@ -165,6 +165,10 @@ const ResumePage = () => {
                         </WorkExpBlock>
                     </ResumeSection>
                     <ResumeSection title="Certifications">
+                        <ResumeBlock title="AWS Certified Cloud Practitioner">
+                            <p className="-mt-1">Amazon Web Services (AWS)</p>
+                            <p className="-mt-1">December 2025</p>
+                        </ResumeBlock>
                         <ResumeBlock title="Google Cybersecurity Certificate">
                             <p className="-mt-1">Coursera</p>
                             <p className="-mt-1">March 2024</p>
