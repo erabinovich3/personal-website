@@ -107,7 +107,7 @@ const ResumePage = () => {
                     <ResumeSection title="Work Experience">
                         <WorkExpBlock
                             title="JPMorgan Chase"
-                            subtitle="Associate Software Engineer"
+                            subtitle="Associate Software Engineer II"
                             dates="May 2024 - Present"
                             className="prose prose-li:m-0"
                         >
